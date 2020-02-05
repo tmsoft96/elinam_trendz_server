@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Elinam Trendz Server</string>
+    <string name="app_version">Version 1.02.00</string>
+    <string name="license"><u>Licenses</u></string>
+    <string name="advertiseNote">Note: Changes done here will note affect the original and this can be deleted anytime</string>
+    <string name="advertiseNote2">In this section you have to give a unique slot number for the product you are about to advertise.
+        Note, that number should not be the same for any upcoming product you will advertise. In the case of product advertisement deleting,
+        you have to update the unique slot numbers of all product you have advertise in other to match the number slot accordingly.
+        You can also decide to live that slot blank in other to add product in that particular slot.</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Now Available</item>
+        <item>Bulk Purchase</item>
+        <item>Slightly Used Products</item>
+        <item>Car Care</item>
+        <item>Your Local Market</item>
+        <item>Global Trending</item>
+    </string-array>
+    <string name="title_activity_viw_profile">ViwProfileActivity</string>
+
+    <string-array name="categoryShop">
+        <item>Select Category</item>
+        <item>Made In Ghana</item>
+        <item>Manufactures</item>
+    </string-array>
+
+    <string-array name="selectShop">
+        <item>Select Shop</item>
+    </string-array>
+
+    <string-array name="orderConfirm">
+        <item>Waiting for confirmation</item>
+        <item>Order Confirmed</item>
+        <item>Order Canceled</item>
+    </string-array>
+
+    <string-array name="deliveryConfirm">
+        <item>Order Delivered</item>
+        <item>Order Not Delivered Yet</item>
+    </string-array>
+
+    <string-array name="paymentConfirm">
+        <item>Waiting for confirmation</item>
+        <item>Payment Received</item>
+        <item>Payment Not Received</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="advertisementSlotNote">Please read this before you attempt this section</string>
+    <string name="slot_number">Slot Number :</string>
+    <string name="advetiseText">Promotion!  Promotion!!  Promotion!!!</string>
+    <string name="deletionNote">Are you sure you want to delete this ad?</string>
+
+</resources>

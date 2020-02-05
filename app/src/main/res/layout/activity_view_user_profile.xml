@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewUserProfileActivity"
+    android:background="@color/grey">
+
+    <include
+        layout="@layout/main_navigation_toolbar"
+        android:id="@+id/viewAllUser_toolbarView"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewAllUser_toolbarView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginBottom="3dp"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profile_image"
+                    android:id="@+id/viewAllUser_profilePicture"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@+id/viewAllUser_fullName"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:id="@+id/viewAllUser_phoneNumber"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:id="@+id/viewAllUser_email"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Location"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:id="@+id/viewAllUser_address"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/v_call"
+                            android:id="@+id/viewAllUser_callUser"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/v_chat"
+                            android:layout_marginLeft="30dp"
+                            android:id="@+id/viewAllUser_chatUser"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/main_order"
+                    android:id="@+id/viewAllUser_image1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_image1"
+                    android:layout_marginLeft="5dp"
+                    android:text="No. of Product Order :"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/viewAllUser_text1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_text1"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/viewAllUser_productOrderNumber"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/viewAllUser_productOrderButton"
+                    android:background="@drawable/white_ash_trans_click"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/main_order"
+                    android:id="@+id/viewAllUser_image2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_image2"
+                    android:layout_marginLeft="5dp"
+                    android:text="No. of Cart Product Order :"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/viewAllUser_text2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_text2"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/viewAllUser_cartProductOrderNumber"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/viewAllUser_cartProductOrderButton"
+                    android:background="@drawable/white_ash_trans_click"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/feedback_black"
+                    android:id="@+id/viewAllUser_image1a"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_image1a"
+                    android:layout_marginLeft="5dp"
+                    android:text="No. of User's Feedback :"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/viewAllUser_text1a"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/viewAllUser_text1a"
+                    android:layout_marginLeft="10dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/viewAllUser_feedBackNumber"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/viewAllUser_feedBackButton"
+                    android:background="@drawable/white_ash_trans_click"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

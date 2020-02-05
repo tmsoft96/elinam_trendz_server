@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:icon="@drawable/chat_us_blue"/>
+
+    <item
+        android:id="@+id/nav_usersFeedback"
+        android:title="Users Feedback"
+        android:icon="@drawable/feedback"/>
+
+    <item
+        android:id="@+id/nav_viewPolicies"
+        android:title="View Policies"
+        android:icon="@drawable/policies"/>
+
+    <item
+        android:id="@+id/nav_shareClient"
+        android:title="Share Client"
+        android:icon="@drawable/share"/>
+
+    <item
+        android:id="@+id/nav_aboutUs"
+        android:title="About Us"
+        android:icon="@drawable/info"/>
+
+    <item
+        android:id="@+id/nav_reportIssues"
+        android:title="Report Issues"
+        android:icon="@drawable/report_issues"/>
+
+    <item
+        android:id="@+id/nave_logOut"
+        android:title="Log Out"
+        android:icon="@drawable/log_out"/>
+
+</menu>

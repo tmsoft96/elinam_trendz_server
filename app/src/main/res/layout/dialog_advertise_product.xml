@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#41000000">
+
+    <TextView
+        android:id="@+id/advertisePromotionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#56000000"
+        android:gravity="center"
+        android:text="@string/advetiseText"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/dialogAdvertise_eventPicture"
+        android:layout_below="@id/advertisePromotionText" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="#41000000"
+        android:id="@+id/dialogAdvertise_productPictureFlipper"/>
+
+    <ImageView
+        android:id="@+id/dialogAdvertise_productPicture"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:background="#41000000"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:text="100% off"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/dialogAdvertise_discountPercent"
+        android:layout_below="@id/advertisePromotionText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialogAdvertise_eventPicture">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/uncheck"
+            android:id="@+id/dialogAdvertise_productPicture1"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/uncheck"
+            android:id="@+id/dialogAdvertise_productPicture2"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/uncheck"
+            android:id="@+id/dialogAdvertise_productPicture3"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#41000000"
+        android:padding="7dp"
+        android:layout_below="@id/dialogAdvertise_eventPicture"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/dialogAdvertise_linear1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GHCXXX"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/dialogAdvertise_initialPrice"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="1dp"
+                android:background="#FF0606"
+                android:layout_centerInParent="true"
+                android:id="@+id/dialogAdvertise_priceStroke"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GHCXXX"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:id="@+id/dialogAdvertise_discountPrice"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Product Name"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#41000000"
+        android:layout_below="@id/dialogAdvertise_linear1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/dialogAdvertise_productName"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Time and Date"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="#41000000"
+        android:layout_below="@id/dialogAdvertise_productName"
+        android:id="@+id/dialogAdvertise_advertisementDateAndTime"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/dialogAdvertise_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialogAdvertise_advertisementDateAndTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fade_back_circle"
+        android:paddingTop="2dp"
+        android:text="X"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 - 6"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/dialogAdvertise_advertisementNumber"
+        android:layout_marginTop="5dp"
+        android:background="#56000000"
+        android:padding="5dp"
+        android:layout_below="@id/advertisePromotionText"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/fade_back_circle"
+        android:id="@+id/dialogAdvertise_previous"
+        android:padding="3dp"
+        android:src="@drawable/previous"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/fade_back_circle"
+        android:id="@+id/dialogAdvertise_next"
+        android:padding="3dp"
+        android:src="@drawable/next"/>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tmsoft.tm.elitrends"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".Holders.application_offline"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.BuyForMeActivity"></activity>
+        <activity android:name=".Activity.ViewAdvertisementActivity" />
+        <activity android:name=".Activity.AdvertiseProductActivity" />
+        <activity android:name=".Activity.ReportIssuesActivity" />
+        <activity android:name=".Activity.AllProductActivity"/>
+        <activity android:name=".Activity.AllOrdersActivity" />
+        <activity android:name=".Activity.ChatMembersActivity" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"/>
+        <activity android:name=".Activity.LogInActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.AddActivity" />
+        <activity android:name=".Activity.ViewProductDetailsActivity" />
+        <activity android:name=".Activity.FavoriteActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.ViewProductOrderDetailsActivity" />
+        <activity android:name=".Activity.ViewPicture" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.ForgetPasswordActivity" />
+        <activity android:name=".Activity.ViewFavoriteDetailActivity" />
+        <activity android:name=".Activity.ChatActivity" />
+        <activity android:name=".Activity.WelcomeScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.CommentActivity" />
+
+        <service android:name=".Notification.MyFirebaseIntentServiceId">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notification.FirebaseNotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+
+        <activity android:name=".Activity.ErrorActivity" />
+        <activity android:name=".Activity.UserSettingsActivity" />
+        <activity android:name=".Activity.ViewUserProfileActivity" />
+        <activity android:name=".Activity.AllUserOrderActivity" />
+        <activity android:name=".Activity.FeedBackActivity" />
+        <activity android:name=".Activity.ViewProductVideoActivity" />
+        <activity android:name=".Activity.PublicNotificationActivity" />
+        <activity android:name=".Activity.ViewPolicyActivity" />
+        <activity android:name=".Activity.ShowCartViewOrderActivity" />
+        <activity android:name=".Activity.ShowCartViewOrderDetailsActivity" />
+        <activity android:name=".Activity.ShowCartWhenClickActivity" />
+        <activity android:name=".Activity.ShowCartDetailsActivity" />
+        <activity android:name=".Activity.AboutUsActivity" />
+        <activity android:name=".Activity.LicenseActivity" />
+        <activity android:name=".Activity.ShowShopProductActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductChristmasActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductEasterActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductBlackMarketActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductPriceReductionActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductHotActivity" />
+        <activity android:name=".Activity.SpecialProduct.SpecialProductValentineActivity" />
+        <activity android:name=".Activity.AboutAppUsageLicense" />
+        <activity android:name=".Activity.AppInfoActivity" />
+    </application>
+
+</manifest>
